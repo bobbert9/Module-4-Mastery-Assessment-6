@@ -6,6 +6,9 @@ The GeoPandas module, for obtaining and displaying a basic map of the globe.
 Pyplot from Matplotlib to plot the heatmap of wildfires over the globe. 
 Numpy, solely to use the histogram2d function to help generate a 2-dimensional heatmap over the globe map. 
 
+The code for this project begins by grabbing the world map image being used later in the program, and declares the file name for the CSV data it'll be referencing. 
+It then draws out the world map using GeoPandas. 
+
 The program then generates 3 lists of data from the CSV file: Latitude, Longitude, and Intensities of the wildfires in each row of the CSV file. 
 A heatmap is generated using these values and is then overlayed on top of the worldmap image generated using GeoPandas. 
 
