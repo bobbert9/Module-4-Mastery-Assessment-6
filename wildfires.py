@@ -1,3 +1,5 @@
+#importing all of the modules needed for the program
+
 import csv
 import geopandas as gpd
 from matplotlib import pyplot as plt
@@ -30,6 +32,7 @@ lats, lons, intensities = [], [], []
 with open("MODIS_C6_1_Global_24h.csv", "r") as file:
     reader = csv.reader(file)
     next(reader)  # Skips header row in csv file
+    #This iterates through the CSV files and grabs data regarding the location of the fires and how intense they area. 
     for row in reader:
             lat = float(row[0])  
             lon = float(row[1])  
